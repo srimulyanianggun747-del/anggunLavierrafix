@@ -1,0 +1,185 @@
+
+/* 1. Pengaturan umum */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #FFE6ED;
+}
+
+/* 2. Header dan menu */
+header {
+    background-color: #CF7486;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Isi halaman */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #eadfd3;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+h2 {
+    color: #6c4a4a;
+    border-bottom: 3px solid #d49a9a;
+    padding-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Warna font judul Tentang Kami dan subbabnya */
+#tentang h2,
+#tentang h3 {
+    color: #6c4a4a;
+}
+
+/* 4. Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #eadfd3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #cf7486;
+}
+
+/* 5. Form */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #cf7486;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a77f60;
+}
+
+/* 6. Tombol WhatsApp */
+.tombol-wa {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #cf7486;
+    color: #f3e3d3;
+    text-align: center;
+    padding: 16px;
+}
+
+/* 8. Galeri foto: 2 foto berdampingan */
+.galeri-foto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.galeri-foto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.item-foto {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+/* 9. Ukuran foto toko */
+#tentang img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* 10. Agar gambar produk tidak terpotong */
+.item-foto img[alt="Baggy Jeans"],
+.item-foto img[alt="Rok Ruched Skirt"],
+.item-foto img[alt="Kemeja Casual"] {
+    object-fit: contain;
+    background-color: #fff;
+}
+
+/* 11. Memperkecil gambar Kaos Basic, Cardigan, dan Outer Fashion */
+.item-foto img[alt="Kaos Basic"],
+.item-foto img[alt="Cardigan"],
+.item-foto img[alt="Outer Fashion"] {
+    width: 85%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
